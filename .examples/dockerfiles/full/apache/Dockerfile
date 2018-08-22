@@ -11,7 +11,7 @@ RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/so
         libkrb5-dev \
         smbclient \
         libsmbclient-dev \
-#       libreoffice \
+       libreoffice \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     && ln -s "/usr/include/$(dpkg-architecture --query DEB_BUILD_MULTIARCH)/gmp.h" /usr/include/gmp.h \
