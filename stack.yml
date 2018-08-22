@@ -7,9 +7,9 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=nextcloud
-      - POSTGRES_USER=nextcloud
-      - POSTGRES_PASSWORD=nextcloud
+      - POSTGRES_DB=nextcloudnextcloud
+      - POSTGRES_USER=nextcloudnextcloud
+      - POSTGRES_PASSWORD=nextcloudnextcloud
 
   app:
     image: bofhbug\nextcloud-full-apache-libreoffice
@@ -20,9 +20,9 @@ services:
       - nextcloud:/var/www/html
     environment:
       - POSTGRES_HOST=db
-      - POSTGRES_DB=nextcloud
-      - POSTGRES_USER=nextcloud
-      - POSTGRES_PASSWORD=nextcloud
+      - POSTGRES_DB=nextcloudnextcloud
+      - POSTGRES_USER=nextcloudnextcloud
+      - POSTGRES_PASSWORD=nextcloudnextcloud
     depends_on:
       - db
 
